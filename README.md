@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
+ Ruby version 2.5.1
 
-Things you may want to cover:
+ Rails version 5.2.1
 
-* Ruby version
+## Launch
 
-* System dependencies
+Heroku Link: [milos_pineapple_shop](https://lit-chamber-46433.herokuapp.com/)
 
-* Configuration
+To launch locally, run the following commands in your terminal:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+git clone https://github.com/Heybluguy/milos_pineapple_shop.git
+cd milos_pineapple_shop
+bundle
+rails db:create
+rails db:migrate
+rails s
+```
+Open your browser and visit `localhost:3000` and interact with the interface.
