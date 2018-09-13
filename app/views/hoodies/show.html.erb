@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @hoody.brand %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hoody.description %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @hoody.size %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @hoody.title %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @hoody.price %>
+</p>
+
+<%= link_to 'Edit', edit_hoody_path(@hoody) %> |
+<%= link_to 'Back', hoodies_path %>

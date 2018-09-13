@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hoodies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Description</th>
+      <th>Size</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hoodies.each do |hoody| %>
+      <tr>
+        <td><%= hoody.brand %></td>
+        <td><%= hoody.description %></td>
+        <td><%= hoody.size %></td>
+        <td><%= hoody.title %></td>
+        <td><%= hoody.price %></td>
+        <td><%= link_to 'Show', hoody %></td>
+        <td><%= link_to 'Edit', edit_hoody_path(hoody) %></td>
+        <td><%= link_to 'Destroy', hoody, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hoody', new_hoody_path %>
