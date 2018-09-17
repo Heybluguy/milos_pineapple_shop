@@ -9,8 +9,8 @@ class Hoody < ApplicationRecord
   validates :price, numericality: {only_integer: true}, length: { maximum: 7 }
 
 
-  BRAND = %w{ Bape BBC}
-  SIZE = %w{ XXL XL L M S }
+  BRAND = %w{ A\ Bathing\ Ape Billionaire\ Boys\ Club KAWS }
+  SIZE = %w{ XXL XL L M S Tall Short }
 
 end
 
