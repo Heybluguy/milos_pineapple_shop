@@ -1,29 +1,47 @@
-<p id="notice"><%= notice %></p>
+<% content_for :body_class, "bg-light" %>
 
-<p>
-  <strong>Brand:</strong>
-  <%= @hoody.brand %>
-</p>
+<section class="section hoody-show">
+  <div class="columns">
+    <div class="column is-8">
+      <h1 class="title is-2"><%= @hoody.title %></h1>
 
-<p>
-  <strong>Description:</strong>
-  <%= @hoody.description %>
-</p>
+      <ul class="pv1">
+        <% if @hoody.brand? %>
+          <li class="inline-block pr3"><%= @hoody.brand %></li>
+        <% end %>
 
-<p>
-  <strong>Size:</strong>
-  <%= @hoody.size %>
-</p>
+        <% if @hoody.size? %>
+          <li class="inline-block pr3"><%= @hoody.size %></li>
+        <% end %>
+      </ul>
 
-<p>
-  <strong>Title:</strong>
-  <%= @hoody.title %>
-</p>
+      <div class="feature-image">
+        <%= image_tag(@hoody.image.url, alt: 'Image') if @hoody.image? %>
+      </div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @hoody.price %>
-</p>
+      <div class="pa4 mt3 bg-white border-radius-3">
+        <%= @hoody.description %></li>
+      </div>
 
-<%= link_to 'Edit', edit_hoody_path(@hoody) %> |
-<%= link_to 'Back', hoodies_path %>
+      <h3 class="subtitle is-4 pt5">Product Specs</h3>
+
+      <table class="table is-narrow">
+        <% if @hoody.brand %>
+          <tr>
+            <td class="has-text-weight-bold">Brand:</td>
+          </tr>
+        <% end %>
+
+        <% if @hoody.size %>
+          <tr>
+            <td class="has-text-weight-bold">Size:</td>
+          </tr>
+        <% end %>
+
+      </table>
+
+
+    </div>
+    <div class="column is-3 is-offset-1"></div>
+  </div>
+</section>
