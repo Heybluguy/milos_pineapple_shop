@@ -7,8 +7,6 @@ Rails version 5.2.1
 
 ## Launch
 
-Heroku Link: [milos_pineapple_shop](https://lit-chamber-46433.herokuapp.com/)
-
 To launch locally, run the following commands in your terminal:
 
 ```
