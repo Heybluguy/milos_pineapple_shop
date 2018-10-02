@@ -13,7 +13,7 @@
 <div class="hoody-index-grid pt4">
   <% @hoodies.each do |hoody| %>
 
-    <div class="instrument border-light">
+    <div class="hoody border-light">
       <div class="hoody-thumb">
         <%= link_to(image_tag(hoody.image.thumb.url, alt: 'Image'), hoody.image.url, target: '_blank') if hoody.image? %>
         <%= image_tag(hoody.image.url, alt: 'Image') if hoody.image? %>
