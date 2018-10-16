@@ -1,5 +1,7 @@
 # README
 
+## Heroku Link: [Milo's Pineapple Shop](https://lit-chamber-46433.herokuapp.com/)
+
 ## Prerequisites
 Ruby version 2.5.1
 
