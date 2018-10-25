@@ -55,7 +55,7 @@ class LineItemsController < ApplicationController
 
   private
 
-  def set_line_item
+    def set_line_item
       @line_item = LineItem.find(params[:id])
     end
 
