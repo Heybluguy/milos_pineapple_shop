@@ -1,5 +1,5 @@
 <div class="keep-shopping pv1 mt4 has-text-right">
-  <%= link_to 'Keep Shopping', hoodies_path, class: 'button is-warning' %>
+  <%= link_to 'Keep Shopping', hoodies_path, class: 'button is-danger' %>
 </div>
 <hr />
 <section class="section">
@@ -7,7 +7,7 @@
 
   <div class="columns">
     <div class="column">
-      <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-danger" %>
+      <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-warning" %>
     </div>
     <div class="column total has-text-right">
       <h4 class="title is-4">
@@ -39,7 +39,7 @@
         document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
       </script>
 
-      <button type="submit" class="button is-warning">Check Out</button>
+      <button type="submit" class="button is-danger">Check Out</button>
 
     <% end %>
 

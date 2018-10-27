@@ -45,7 +45,7 @@ class HoodiesController < ApplicationController
   def destroy
     @hoody.destroy
     respond_to do |format|
-      format.html { redirect_to hoodies_url, notice: 'Hoody was successfully destroyed.' }
+      format.html { redirect_to hoodies_url, notice: 'Hoody was successfully deleted.' }
       format.json { head :no_content }
     end
   end
