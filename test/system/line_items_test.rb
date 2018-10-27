@@ -18,7 +18,7 @@ class LineItemsTest < ApplicationSystemTestCase
     fill_in "Hoody", with: @line_item.hoody_id
     click_on "Create Line item"
 
-    assert_text "Line item was successfully created"
+    assert_text "Item was successfully created"
     click_on "Back"
   end
 
@@ -30,7 +30,7 @@ class LineItemsTest < ApplicationSystemTestCase
     fill_in "Hoody", with: @line_item.hoody_id
     click_on "Update Line item"
 
-    assert_text "Line item was successfully updated"
+    assert_text "Item was successfully updated"
     click_on "Back"
   end
 
@@ -40,6 +40,6 @@ class LineItemsTest < ApplicationSystemTestCase
       click_on "Destroy", match: :first
     end
 
-    assert_text "Line item was successfully destroyed"
+    assert_text "Line item was successfully deleted"
   end
 end

@@ -21,6 +21,22 @@ $link-hover: #222;
  @import "functions";
 
 
+.hero .title {
+  height: 228px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.navbar.is-white {
+  max-height: 69px;
+}
+
+.navbar-item img {
+  max-height: 4.75rem;
+  margin-top: 30px;
+}
+
 .notification {
   border-radius: 0;
 }

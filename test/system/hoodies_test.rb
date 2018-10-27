@@ -46,6 +46,6 @@ class HoodiesTest < ApplicationSystemTestCase
       click_on "Destroy", match: :first
     end
 
-    assert_text "Hoody was successfully destroyed"
+    assert_text "Hoody was successfully deleted"
   end
 end

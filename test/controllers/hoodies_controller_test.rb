@@ -7,12 +7,12 @@ class HoodiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should get index" do
     get hoodies_url
-    assert_response :success
+    assert_response :primary
   end
 
   test "should get new" do
     get new_hoody_url
-    assert_response :success
+    assert_response :primary
   end
 
   test "should create hoody" do
@@ -25,12 +25,12 @@ class HoodiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should show hoody" do
     get hoody_url(@hoody)
-    assert_response :success
+    assert_response :primary
   end
 
   test "should get edit" do
     get edit_hoody_url(@hoody)
-    assert_response :success
+    assert_response :primary
   end
 
   test "should update hoody" do

@@ -7,12 +7,12 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
 
   test "should get index" do
     get carts_url
-    assert_response :success
+    assert_response :primary
   end
 
   test "should get new" do
     get new_cart_url
-    assert_response :success
+    assert_response :primary
   end
 
   test "should create cart" do
@@ -25,12 +25,12 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
 
   test "should show cart" do
     get cart_url(@cart)
-    assert_response :success
+    assert_response :primary
   end
 
   test "should get edit" do
     get edit_cart_url(@cart)
-    assert_response :success
+    assert_response :primary
   end
 
   test "should update cart" do
