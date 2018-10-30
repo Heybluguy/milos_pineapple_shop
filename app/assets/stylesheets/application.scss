@@ -25,16 +25,23 @@ $link-hover: #222;
   height: 228px;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 .navbar.is-white {
   max-height: 69px;
 }
 
+.navbar-brand {
+  margin-top: 19px;
+}
+
+a.navbar-item {
+ margin-top: 1rem;
+}
+
 .navbar-item img {
   max-height: 4.75rem;
-  margin-top: 30px;
 }
 
 .notification {
