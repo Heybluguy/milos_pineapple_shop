@@ -2,6 +2,8 @@
 
 ## Heroku Link: [Milo's Pineapple Shop](https://lit-chamber-46433.herokuapp.com/)
 
+Milo's Pineapple Shop is an e-commerce platform built with Ruby on Rails, to buy and sell clothing to or from other users. Upon signing up, a user could post their own new items to sell or view listings from other users.The listing show the brand, size, title, description and image of the item.
+
 ## Prerequisites
 Ruby version 2.5.1
 
