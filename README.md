@@ -4,8 +4,12 @@
 
 Milo's Pineapple Shop is an e-commerce platform built with Ruby on Rails and utilizes Stripe API for payment processing, to buy and sell clothing to or from other users. Upon signing up, a user could post their own new items to sell or view listings from other users. The listing shows the brand, size, title, price, description and image of the item.
 
-![schema](app/assets/images/schema.png)
+Root path
 ![root](app/assets/images/root.png)
+
+Schema
+![schema](app/assets/images/schema.png)
+
 
 ## Prerequisites
 
